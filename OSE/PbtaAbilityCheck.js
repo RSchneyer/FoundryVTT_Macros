@@ -18,7 +18,7 @@ new Dialog({
   content: dialog_content,
   buttons: {
     button1: {
-      label: "Display Value",
+      label: "Roll!",
       callback: (html) => myCallback(html),
       icon: `<i class="fa-solid fa-dice"></i>`
     }
