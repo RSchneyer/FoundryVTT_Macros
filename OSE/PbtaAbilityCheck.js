@@ -1,3 +1,11 @@
+/** 
+* Powered By The Apocalypse style ability rolls.
+* Instead of d20 + mod vs DC, 2d6 + mod falls into one of 3 categories:
+* - total < 7: failure
+* - total > 9: full success
+* - total > 6 && total < 10: partial success
+*/
+
 const abilities = ["cha", "con", "dex", "int", "str", "wis"];
 const ab_full_names = {"cha":"Charisma", "con":"Constitution", "dex":"Dexterity", "int":"Intelligence", "str":"Strength", "wis":"Wisdom"};
 let scores = actor.system.scores;
