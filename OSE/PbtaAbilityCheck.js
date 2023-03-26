@@ -18,7 +18,7 @@ new Dialog({
 async function myCallback(html) {
     const value = html.find("[name=ability]")[0].value;
     const ab_mod = scores[value].mod;
-console.log(ab_mod);
+    console.log(ab_mod);
     let roll = await new Roll(`2d6`).roll();
     let message = `<h2><b>${actor.name}</b> attempts a <b>${value.toUpperCase()}</b> ability check!</h2>`;
     if((roll.total + ab_mod) < 7){message += " failure";}
